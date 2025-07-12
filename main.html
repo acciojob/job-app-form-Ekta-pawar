@@ -7,29 +7,52 @@
 </head>
 
 <body>
-	<div class="application">
-		<h2> Job Application Form </h2>
-		<form>
-			 <label for="name">Name</label>
-			<input type="text" id='name' required/>
-		 <label for="name">Email</label>
-			<input type="Email Input" id='email' required/>
-		 <label for="name">Gender</label>
-			<input type="Radio Buttons" class="gender"/>
-			 <label for="name">Laptop Brands</label>
-			<input type="Dropdown" id="laptop"/>
-				 <label for="name">Age</label>
-			<input type="Number Input" id="age" required>
-				 <label for="name">Date of Birth</label>
-			<input type="Date Input" id="dob" required>
-			<label for="name">Portfolio URL</label>
-			<input type="URL Input" id="portfolio" >
-			
-      <button type="Button">Submit</button>
-			
+	<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+	<!-- the entire body must be written by student -->
+	<form method="post">
+	<label for=name>Name</label>
+	<input placeholder="name" type="text" id="name" required/><br>
+		<label for=email>Email</label>
+	<input placeholder="email" type="email" id="email" required/><br>
+ 
+	<label for="gender">Gender:</label><br>
+		<label for="male">Male</label>
+		<input type="radio" id="male" name="gender" required>
+	<label for="female">female</label>
+		<input type="radio" id="female" name="gender" required><br>
+ 
+	<label for="laptop">Laptop Brands</label>
+		<select id="laptop">
+			<option>Apple</option>
+			<option>Asus</option>
+			<option>HP</option>
+		</select>
+ 
+		<label for=age>Age</label>
+	<input placeholder="age" type="number" id="age" required/><br>
+		<label for=dob>Date of Birth </label>
+	<input placeholder="date of birth" type="date" id="dob" required/><br>
+		<label for=password>Password</label>
+	<input placeholder="password" type="password" id="password" required/><br>
+		<label for=portfolio>Portfolio URL</label>
+	<input placeholder="portfolio" type="url" id="portfolio"/><br>
+	<button type="submit">Submit</button>
+ 
+    <script type="text/javascript" src="./script.js">
+</script>
 		</form>
-	</div>
-	
+ 
+</body>
+ 
+</html>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
